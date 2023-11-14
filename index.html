@@ -1,32 +1,65 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Login Form</title>
-  <link rel="stylesheet" href="./style.css">
-
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<center><title>Registration Form</title></center>
 </head>
-<body>
+<style>
+body {
+  background: #555;
+}
 
-<div class="login-page">
-  <div class="form">
-    <form class="register-form">
-      <input type="text" placeholder="name"/>
-      <input type="password" placeholder="password"/>
-      <input type="text" placeholder="email address"/>
-      <button>create</button>
-      <p class="message">Already registered? <a href="#">Sign In</a></p>
-    </form>
-    <form class="login-form">
-      <input type="text" placeholder="username"/>
-      <input type="password" placeholder="password"/>
-      <button>login</button>
-      <p class="message">Not registered? <a href="#">Create an account</a></p>
-    </form>
-  </div>
+.index {
+  max-width: 500px;
+  margin: auto;
+  background: pink;
+  padding: 10px;
+}
+</style>
+<body>
+	<div class="index">
+	<fieldset>
+	<form action="insert.html" method="post">
+		<b>name:<input type="text" name="name" required><br><br></b>
+		<b>dob:<input type="date" name="dob" id=birthday required><br><br></b>
+		<b>father_name:<input type="text" name="father_name" required><br><br></b>
+		<b><label>gender:</label><br></b>
+		<input type="radio" id="male" name="gender" value="male">
+        <label for="html">male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="css">female</label><br><br>
+		<b>country:<input type="text" name="country" required><br><br></b>
+		<b>state:<input type="text" name="state" required><br><br></b>
+		<b>photo:<input type="file" name="fileToUpload" id=fileToUpload required><br><br></b>
+		<b>email_id:<input type="mail" name="email_id" required><br><br></b>
+		<b>mobile_number:<input type="number" name="mobile_number" required><br><br></b>
+	
+        <b><label>hobbies:</label><br></b>
+        <input type="checkbox" id="hobbies1" name="hobbies1" value="drawing">
+        <label for="hobbies1"> drawing</label><br>
+        <input type="checkbox" id="hobbies2" name="hobbies2" value="sleeping">
+        <label for="hobbies2"> sleeping</label><br>
+        <input type="checkbox" id="hobbies3" name="hobbies3" value="cooking">
+        <label for="hobbies3"> cooking</label><br>
+        <input type="checkbox" id="hobbies4" name="hobbies4" value="gardening">
+        <label for="hobbies4"> gardening</label><br><br>
+ 
+		<b>educational_qualification:<input type="text" name="educational_qualification" required><br><br></b>
+		<b><label for="year">passed_out:</label></b>
+        <select name="year" id="year">
+         <option value="2020">2020</option>
+         <option value="2021">2021</option>
+         <option value="2022">2022</option>
+         <option value="2023">2023</option>
+        </select><br><br>
+		<b>university:<input type="text" name="university" required><br><br></b>
+		<input type="submit" name="" value="save">
+	</form>
+</fieldset>
 </div>
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+
 
 </body>
 </html>
